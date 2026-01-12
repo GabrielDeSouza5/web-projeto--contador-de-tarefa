@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #e9eef3, #f7f9fb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background: white;
+  width: 360px;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+#contador {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+button {
+  flex: 1;
+  margin: 0 4px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  background: #ef2de5;
+  color: white;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background: #a21ba7;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  background: #f1f3f6;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+li:hover {
+  background: #e0e5eb;
+}
+
+.feito {
+  background: #d7f5e3;
+  color: green;
+  text-decoration: line-through;
+}
+
+#tema {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+body.dark {
+  background: linear-gradient(135deg, #0f0f1a, #1a1a2e);
+}
+
+body.dark .container {
+  background: #1f1f2e;
+  color: #ccc;
+}
+
+body.dark #contador {
+  color: #ccc;
+}
+
+body.dark li {
+  background: #2a2a3d;
+}
+
+body.dark li:hover {
+  background: #353555;
+}
+
+body.dark .feito {
+  background: #244d3a;
+  color: #6cffb3;
+}
+
+body.dark button {
+  background: #ef2de5; /* roxo */
+}
+
+body.dark button:hover {
+  background: #a21ba7;
+}
+
